@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import React from "react";
+import { View } from "react-native";
+
+// import Component
+// import EmbedExpression from "./src/screens/embedExpression";
+// import Content from "./src/screens/content";
+// import Header from "./src/screens/header";
+// import Event from "./src/screens/event";
+import Props from "./src/screens/props";
+
+//Import Screen
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View>
+      <StatusBar />
+      {/* Use Component */}
+      {/* <EmbedExpression />
+      <Content/>
+      <Header/>
+      <Event/> */}
+      <Props />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
